@@ -1,4 +1,4 @@
-
+# Various star formations and printing the same in python
 
 def print_square(n):
     nst = n
