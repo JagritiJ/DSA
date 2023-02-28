@@ -59,7 +59,6 @@ def get_maze_paths(sr, sc, dr, dc):
 
         return my_paths
 
-
 def main():
     m = int(input())
     n = int(input())

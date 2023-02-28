@@ -27,8 +27,10 @@ n
 def increasing_decreasing(n):
     if n==0:
         return
+    # the below print is executed while going up the stack
     print(n)
     increasing_decreasing(n-1)
+    # while coming down the stack
     print(n)
 
 def main():

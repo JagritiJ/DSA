@@ -1,5 +1,4 @@
-
-
+# Write subsequences of a string, (not the substrings), subsequence can be in any order. Think why recursion?
 
 def subsequence(str):
 
