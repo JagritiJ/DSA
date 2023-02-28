@@ -138,6 +138,41 @@ def mix_number_diamond(n):
             nst -= 2
         print("\n")
 
+def outline_diamond(n):
+    nspo = int(n/2)
+    nspi = -1
+    rows =n
+
+    for row in range(rows):
+        for cspo in range(nspo):
+            print(" ", end="")
+        print("*", end="")
+        for cspi in range(nspi):
+            print(" ", end="")
+
+        if nspi !=-1:
+            print("*", end="")
+
+        if(row<int(n/2)):
+            nspo -= 1
+            nspi += 2
+        else:
+            nspo += 1
+            nspi -= 2
+        print("\n")
+
+def print_x(n):
+    i = int(n)
+    for i in range(n):
+        for j in range(n):
+            if (i==j) or (i+j == n+1):
+                print("*", end="")
+        print("\n")
+
+def print_probability_pattern(n):
+
+    pass
+
 if __name__ == "__main__":
     n = int(input())
     print("Printing Square\n", print_square(n))
@@ -149,3 +184,5 @@ if __name__ == "__main__":
     print("Hollow Diamond\n", hollow_diamond(n))
     print("Number Diamond\n", number_diamond(n))
     print("Mix Number Diamond\n", mix_number_diamond(n))
+    print("Outline Diamond\n", outline_diamond(n))
+    print("Print X\n", print_x(n))
